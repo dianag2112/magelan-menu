@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Magelan — pirate-themed restaurant menu." />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:title" content="Magelan — Menu" />
+    <meta property="og:description" content="Magelan Restaurant Menu" />
+    <meta property="og:image" content="assets/magelan-index.jpg" />
+
+    <title>Magelan — Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<a class="skip-link" href="#menu">Skip to menu</a>
+
+<header class="hero">
+    <div class="hero__inner">
+        <div class="brand">
+            <img class="brand__logo" src="assets/magelan-index.jpg" alt="Magelan logo">
+            <p class="brand__sub">Restaurant Menu</p>
+        </div>
+    </div>
+</header>
+
+<main id="menu" class="container">
+
+    <!-- Starters -->
+    <section class="section">
+        <div class="section__head">
+            <h2 class="section__title">Супи</h2>
+        </div>
+
+        <div class="menu-list">
+
+            <div class="menu-row">
+                <span class="item-name">Пилешка супа</span>
+                <span class="item-dots"></span>
+                <span class="item-price">3.00 €</span>
+            </div>
+            <p class="item-desc">Grilled bread, tomato, garlic, basil, olive oil.</p>
+
+            <div class="menu-row">
+                <span class="item-name">Black Pearl Calamari</span>
+                <span class="item-dots"></span>
+                <span class="item-price">18.50 €</span>
+            </div>
+            <p class="item-desc">Crispy calamari, lemon, spicy aioli.</p>
+
+            <div class="menu-row">
+                <span class="item-name">Harbor Salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">14.40 €</span>
+            </div>
+            <p class="item-desc">Mixed greens, cucumber, cherry tomato, feta, olives.</p>
+
+        </div>
+    </section>
+
+    <!-- Mains -->
+    <section class="section">
+        <div class="section__head">
+            <h2 class="section__title">Mains</h2>
+            <p class="section__desc">For hungry sailors.</p>
+        </div>
+
+        <div class="menu-list">
+
+            <div class="menu-row">
+                <span class="item-name">Magelan Ribeye (300g)</span>
+                <span class="item-dots"></span>
+                <span class="item-price">39.90 €</span>
+            </div>
+            <p class="item-desc">Char-grilled ribeye, pepper sauce, roasted potatoes.</p>
+
+            <div class="menu-row">
+                <span class="item-name">Red Sails Burger</span>
+                <span class="item-dots"></span>
+                <span class="item-price">22.90 €</span>
+            </div>
+            <p class="item-desc">Beef patty, cheddar, caramelized onions, house sauce.</p>
+
+            <div class="menu-row">
+                <span class="item-name">Sea Map Salmon</span>
+                <span class="item-dots"></span>
+                <span class="item-price">28.60 €</span>
+            </div>
+            <p class="item-desc">Pan-seared salmon, citrus glaze, seasonal vegetables.</p>
+
+        </div>
+    </section>
+
+    <!-- Desserts -->
+    <section class="section">
+        <div class="section__head">
+            <h2 class="section__title">Desserts</h2>
+            <p class="section__desc">A sweet ending.</p>
+        </div>
+
+        <div class="menu-list">
+
+            <div class="menu-row">
+                <span class="item-name">Treasure Chest Tiramisu</span>
+                <span class="item-dots"></span>
+                <span class="item-price">11.50 €</span>
+            </div>
+            <p class="item-desc">Classic tiramisu with cocoa and espresso.</p>
+
+            <div class="menu-row">
+                <span class="item-name">Molten Lava Cake</span>
+                <span class="item-dots"></span>
+                <span class="item-price">12.40 €</span>
+            </div>
+            <p class="item-desc">Warm chocolate cake, liquid center, vanilla ice cream.</p>
+
+        </div>
+    </section>
+
+    <!-- Drinks -->
+    <section class="section">
+        <div class="section__head">
+            <h2 class="section__title">Drinks</h2>
+            <p class="section__desc">Raise the flag.</p>
+        </div>
+
+        <div class="menu-list">
+
+            <div class="menu-row">
+                <span class="item-name">Espresso</span>
+                <span class="item-dots"></span>
+                <span class="item-price">3.50 €</span>
+            </div>
+            <p class="item-desc">Single shot.</p>
+
+            <div class="menu-row">
+                <span class="item-name">House Lemonade</span>
+                <span class="item-dots"></span>
+                <span class="item-price">6.90 €</span>
+            </div>
+            <p class="item-desc">Fresh lemon, mint, sparkling water.</p>
+
+            <div class="menu-row">
+                <span class="item-name">“Black Flag” Mocktail</span>
+                <span class="item-dots"></span>
+                <span class="item-price">9.80 €</span>
+            </div>
+            <p class="item-desc">Berry blend, lime, tonic, bitters.</p>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__box">
+            <p class="footer__text">
+                For allergens & special requests, please ask our crew.
+                <span class="footer__muted">•</span>
+                © <span id="year"></span> Magelan
+            </p>
+        </div>
+    </footer>
+
+</main>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
