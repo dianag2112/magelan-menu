@@ -207,17 +207,29 @@ body{
 
 .footer__title{
     margin: 0;
-    font-family: var(--headline);
-    font-size: 28px;
+    font-family: "Cormorant Unicase", serif;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .footer__text{
     margin: 8px 0 0;
     color: var(--muted);
+    font-family: "Cormorant Unicase", serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
 }
 
 .footer__muted{
     opacity: .5;
     padding: 0 6px;
+}
+
+.footer__copy{
+    white-space: nowrap;
 }
