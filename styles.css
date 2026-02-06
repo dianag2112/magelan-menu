@@ -51,7 +51,7 @@ body{
 
 .brand__sub{
     margin-top: 10px;
-    font-family: var(--headline);
+    font-family: 'Pirata One', var(--headline), serif;
     font-size: 28px;
     letter-spacing: .03em;
     color: var(--muted);
@@ -67,16 +67,10 @@ body{
     margin-top: 40px;
 }
 
-.section__head{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 10px;
-    align-items: baseline;
-}
-
 .section__title{
-    font-family: var(--headline);
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     font-size: 38px;
 }
@@ -87,7 +81,77 @@ body{
     font-size: 14px;
 }
 
+/* Remove old section separators if you still have them */
+.section{
+    margin-top: 0;           /* avoids big gaps */
+    padding-top: 0;
+}
+
+/* Accordion base */
+.accordion{
+    margin: 0;
+    padding: 0;
+    border: 0;               /* <-- this removes those extra lines */
+}
+
+/* Add spacing between sections WITHOUT extra borders */
+.section + .section{
+    margin-top: 18px;
+}
+
+/* Clickable header row */
+.accordion__summary{
+    list-style: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);  /* ONE single line only */
+    user-select: none;
+}
+
+.accordion__summary::-webkit-details-marker{
+    display: none;
+}
+
+/* Title inside summary */
+.accordion__summary .section__title{
+    margin: 0;
+}
+
+/* Chevron rotate */
+.accordion__chev{
+    color: var(--muted);
+    font-size: 18px;
+    transition: transform .2s ease;
+}
+.accordion[open] .accordion__chev{
+    transform: rotate(180deg);
+}
+
+/* Collapsible content */
+.accordion__content{
+    padding: 14px 0 6px;
+}
+
 /* ----- Menu rows ----- */
+
+.subcat{
+    margin: 18px 0 10px;
+    padding-top: 12px;
+
+    font-family: "Cormorant Unicase", serif;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
+
+    color: rgba(255,255,255,.88);
+    border-top: 1px solid rgba(255,255,255,.10);
+}
 
 .menu-list{
     margin-top: 20px;
@@ -103,7 +167,16 @@ body{
 
 .item-name{
     font-size: 18px;
-    font-weight: 600;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.item-name i {
+    font-style: italic;
+    opacity: 0.85;   /* optional: subtle look */
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 .item-dots{
@@ -112,7 +185,9 @@ body{
 }
 
 .item-price{
-    font-weight: 700;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 16px;
 }
 

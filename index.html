@@ -15,7 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -34,10 +36,12 @@
 <main id="menu" class="container">
 
     <section class="section">
-        <div class="section__head">
-            <h2 class="section__title">Ново / New</h2>
-        </div>
+        <details class="accordion">
+        <summary class="accordion__summary">
+        <h2 class="section__title">Ново / New</h2>
+        </summary>
 
+        <div class="accordion__content">
         <div class="menu-list">
 
             <div class="menu-row">
@@ -60,16 +64,18 @@
                 <span class="item-price">4.80 €</span>
             </div>
             <p class="item-desc">300 g</p>
-
         </div>
+        </div>
+        </details>
     </section>
 
-    <!-- Starters -->
     <section class="section">
-        <div class="section__head">
+        <details class="accordion">
+            <summary class="accordion__summary">
             <h2 class="section__title">Супи / Soups</h2>
-        </div>
+        </summary>
 
+        <div class="accordion__content">
         <div class="menu-list">
 
             <div class="menu-row">
@@ -87,21 +93,23 @@
             <p class="item-desc">450 ml</p>
 
             <div class="menu-row">
-                <span class="item-name">Таратор / Tarator (cold cucumber yogurt soup)</span>
+                <span class="item-name">Таратор / Tarator <i>(cold cucumber yogurt soup)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">2.30 €</span>
             </div>
             <p class="item-desc">500 ml</p>
-
         </div>
+        </div>
+        </details>
     </section>
 
-    <!-- Mains -->
     <section class="section">
-        <div class="section__head">
-            <h2 class="section__title">Студени предястия / Cold appetizers</h2>
-        </div>
+        <details class="accordion">
+        <summary class="accordion__summary">
+        <h2 class="section__title">Студени предястия / Cold appetizers</h2>
+        </summary>
 
+        <div class="accordion__content">
         <div class="menu-list">
 
             <div class="menu-row">
@@ -119,28 +127,30 @@
             <p class="item-desc">100 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Суджук/луканка / Sudzhuk (spiced dry sausage)</span>
+                <span class="item-name">Суджук/луканка / Sudzhuk <i>(spiced dry sausage)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">5.20 €</span>
             </div>
             <p class="item-desc">100 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Пастърма/филе „Елена“ / Pastirma (dry-cured beef)/"File Elena" (dry-cured pork)</span>
+                <span class="item-name">Пастърма/филе „Елена“ / Pastirma <i>(dry-cured beef)</i> / "File Elena" <i>(dry-cured pork)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">6.20 €</span>
             </div>
             <p class="item-desc">100 g</p>
-
         </div>
+        </div>
+        </details>
     </section>
 
-    <!-- Desserts -->
     <section class="section">
-        <div class="section__head">
-            <h2 class="section__title">Салати / Salads</h2>
-        </div>
+        <details class="accordion">
+        <summary class="accordion__summary">
+        <h2 class="section__title">Салати / Salads</h2>
+        </summary>
 
+        <div class="accordion__content">
         <div class="menu-list">
 
             <div class="menu-row">
@@ -165,21 +175,21 @@
             <p class="item-desc">350 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Мешана / Meshana (cucumbers and tomatoes)</span>
+                <span class="item-name">Мешана / Meshana <i>(cucumbers and tomatoes)<i></i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">3.40 €</span>
             </div>
             <p class="item-desc">300 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Шопска / Shopska (tomatoes, cucumbers, peppers, onions and white cheese)</span>
+                <span class="item-name">Шопска / Shopska <i>(tomatoes, cucumbers, peppers, onions and white cheese)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">4.20 €</span>
             </div>
             <p class="item-desc">350 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Овчарска / Ovcharska (tomatoes, cucumbers, peppers, onions, ham, mushrooms and white cheese)</span>
+                <span class="item-name">Овчарска / Ovcharska <i>(tomatoes, cucumbers, peppers, onions, ham, mushrooms and white cheese)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">4.80 €</span>
             </div>
@@ -235,49 +245,49 @@
             <p class="item-desc">300 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Снежанка / Snezhanka (yogurt and cucumber dip)</span>
+                <span class="item-name">Снежанка / Snezhanka <i>(yogurt and cucumber dip)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">4.20 €</span>
             </div>
             <p class="item-desc">250 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Мексиканска салата (боб, чушки, царевица, лук, чили сос) / Mexican salad (beans, peppers, corn, onions, chilli)</span>
+                <span class="item-name">Мексиканска салата <i>(боб, чушки, царевица, лук, чили сос)</i> / Mexican salad <i>(beans, peppers, corn, onions, chilli)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">4.20 €</span>
             </div>
             <p class="item-desc">250 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Салата "Ружа" (домати, краставици, зеле, лук, чушки, моркови) / "Ruzha" (tomatoes, cucumbers, cabbage, onions, peppers, carrots)</span>
+                <span class="item-name">Салата "Ружа" <i>(домати, краставици, зеле, лук, чушки, моркови)</i> / "Ruzha" <i>(tomatoes, cucumbers, cabbage, onions, peppers, carrots)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">4.20 €</span>
             </div>
             <p class="item-desc">300 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Салатата на шефа (луканка, филе, кашкавал, гъби, лук, домати, краставици, зеле) / Chef's salad (sudzhuk, ham, yellow cheese, mushrooms, onions, tomatoes, cucumbers, cabbage)</span>
+                <span class="item-name">Салатата на шефа <i>(луканка, филе, кашкавал, гъби, лук, домати, краставици, зеле)</i> / Chef's salad <i>(sudzhuk, ham, yellow cheese, mushrooms, onions, tomatoes, cucumbers, cabbage)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">6.90 €</span>
             </div>
             <p class="item-desc">550 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Гръцка салата (домати, краставици, марули, лук, сирене, „Перла“ / Greek salad (tomatoes, cucumbers, lettuce, onions, white cheese, marinated small fish)</span>
+                <span class="item-name">Гръцка салата <i>(домати, краставици, марули, лук, сирене, „Перла“)</i> / Greek salad <i>(tomatoes, cucumbers, lettuce, onions, white cheese, marinated small fish)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">5.10 €</span>
             </div>
             <p class="item-desc">350 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Салата „Риба тон“ (марули, домати, царевица, лук, грах, риба тон, лимон) / Tuna salad (lettuce, tomatoes, corn, onions, peas, tuna, lemon)</span>
+                <span class="item-name">Салата „Риба тон“ <i>(марули, домати, царевица, лук, грах, риба тон, лимон)</i> / Tuna salad <i>(lettuce, tomatoes, corn, onions, peas, tuna, lemon)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">6.50 €</span>
             </div>
             <p class="item-desc">500 g</p>
 
             <div class="menu-row">
-                <span class="item-name">Салата „Магелан“ (марули, лук, грах, царевица, миди, рулца от раци, „Перла“, лимон) / "Magelan" salad (lettuce, onions, peas, corn, mussels, surimi sticks, small marinated fish, lemon)</span>
+                <span class="item-name">Салата „Магелан“ <i>(марули, лук, грах, царевица, миди, рулца от раци, „Перла“, лимон)</i> / "Magelan" salad <i>(lettuce, onions, peas, corn, mussels, surimi sticks, small marinated fish, lemon)</i></span>
                 <span class="item-dots"></span>
                 <span class="item-price">6.90 €</span>
             </div>
@@ -298,39 +308,149 @@
             <p class="item-desc">150 g</p>
 
         </div>
+        </div>
+        </details>
     </section>
 
-    <!-- Drinks -->
     <section class="section">
-        <div class="section__head">
-            <h2 class="section__title">Drinks</h2>
-            <p class="section__desc">Raise the flag.</p>
-        </div>
+        <details class="accordion">
+            <summary class="accordion__summary">
+                <h2 class="section__title">Топли предястия / Hot appetizers</h2>
+            </summary>
 
-        <div class="menu-list">
+            <div class="accordion__content">
+                <div class="menu-list">
 
-            <div class="menu-row">
-                <span class="item-name">Espresso</span>
-                <span class="item-dots"></span>
-                <span class="item-price">3.50 €</span>
+                    <div class="menu-row">
+                        <span class="item-name">Моцарелени пръчици / Mozzarella sticks</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">4.10 €</span>
+                    </div>
+                    <p class="item-desc">200 g</p>
+
+                    <div class="menu-row">
+                        <span class="item-name">Кашкавал пане / Breaded yellow cheese</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">4.20 €</span>
+                    </div>
+                    <p class="item-desc">200 g</p>
+
+                    <div class="menu-row">
+                        <span class="item-name">Топено сирене пане / Breaded processed cheese</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">4.20 €</span>
+                    </div>
+                    <p class="item-desc">200 g</p>
+
+                </div>
             </div>
-            <p class="item-desc">Single shot.</p>
+        </details>
+    </section>
 
-            <div class="menu-row">
-                <span class="item-name">House Lemonade</span>
-                <span class="item-dots"></span>
-                <span class="item-price">6.90 €</span>
+    <section class="section">
+        <details class="accordion">
+            <summary class="accordion__summary">
+                <h2 class="section__title">Мезета / Meze</h2>
+            </summary>
+
+            <div class="accordion__content">
+                <div class="menu-list">
+
+                    <div class="menu-row">
+                        <span class="item-name">Катино мезе <i>(свинско месо, лук, гъби, подправки)</i> / Katino meze <i>(pork, onions, mushrooms, spices)</i></span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">5.60 €</span>
+                    </div>
+                    <p class="item-desc">300 g</p>
+
+                    <div class="menu-row">
+                        <span class="item-name">Мезелък за двама <i>(наденица, пилешко филе, бекон, лук)</i> / Meze for two <i>(sausage, chicken fillet, bacon, onions)</i></span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">7.00 €</span>
+                    </div>
+                    <p class="item-desc">450 g</p>
+
+                    <div class="menu-row">
+                        <span class="item-name">Капитанско мезе <i>(пилешко бонфиле, свинско бонфиле, подправки)</i> / Captain's meze <i>(chicken tenderloin, pork tenderloin, spices)</i></span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">7.50 €</span>
+                    </div>
+                    <p class="item-desc">300 g</p>
+
+                </div>
             </div>
-            <p class="item-desc">Fresh lemon, mint, sparkling water.</p>
+        </details>
+    </section>
 
-            <div class="menu-row">
-                <span class="item-name">“Black Flag” Mocktail</span>
-                <span class="item-dots"></span>
-                <span class="item-price">9.80 €</span>
+    <section class="section">
+        <details class="accordion">
+            <summary class="accordion__summary">
+                <h2 class="section__title">Скара / Grill</h2>
+            </summary>
+
+            <div class="accordion__content">
+                <div class="menu-list">
+
+                    <div class="menu-row">
+                        <span class="item-name"> Пилешко филе / Chicken fillet)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3.00 €</span>
+                    </div>
+                    <p class="item-desc">150 g</p>
+
+                </div>
             </div>
-            <p class="item-desc">Berry blend, lime, tonic, bitters.</p>
+        </details>
+    </section>
 
-        </div>
+    <section class="section">
+        <details class="accordion">
+            <summary class="accordion__summary">
+                <h2 class="section__title">Основни ястия / Main courses</h2>
+            </summary>
+
+            <div class="accordion__content">
+                <div class="menu-list">
+
+                    <h3 class="subcat">Свински ястия / Pork main courses</h3>
+
+                    <div class="menu-row">
+                        <span class="item-name">Свинско по "Сашо-ански" / "Sasho-anski" pork</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">6.20 €</span>
+                    </div>
+                    <p class="item-desc">400 g</p>
+
+                    <h3 class="subcat">Пилешки ястия / Chicken main courses</h3>
+
+                    <div class="menu-row">
+                        <span class="item-name">Пиле „Чили“ / Chilli chicken</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">5.50 €</span>
+                    </div>
+                    <p class="item-desc">400 g</p>
+
+                    <h3 class="subcat">Гювечета / Individual clay pot dishes</h3>
+
+                    <div class="menu-row">
+                        <span class="item-name">Сирене по шопски / Sirene po shopski</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">3.50 €</span>
+                    </div>
+                    <p class="item-desc">400 g</p>
+
+                    <h3 class="subcat">Риба / Fish</h3>
+
+                    <div class="menu-row">
+                        <span class="item-name">Скумрия на скара / Grilled Mackerel</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">6.00 €</span>
+                    </div>
+                    <p class="item-desc">500 g</p>
+
+                </div>
+            </div>
+        </details>
     </section>
 
     <footer class="footer">
@@ -338,7 +458,7 @@
             <p class="footer__text">
                 For allergens & special requests, please ask our crew.
                 <span class="footer__muted">•</span>
-                © <span id="year"></span> Magelan
+                <span>© </span><span id="year"></span> Magelan
             </p>
         </div>
     </footer>
