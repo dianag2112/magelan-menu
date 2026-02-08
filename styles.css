@@ -141,16 +141,22 @@ body{
 /* ----- Menu rows ----- */
 
 .subcat{
-    margin: 18px 0 10px;
-    padding-top: 12px;
+    margin: 22px 0 12px;
+    padding: 10px 0 6px 12px;
 
     font-family: "Cormorant Unicase", serif;
-    font-style: normal;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 600;
 
-    color: rgba(255,255,255,.88);
+    color: rgba(255,255,255,.92);
+
     border-top: 1px solid rgba(255,255,255,.10);
+    border-left: 3px solid rgba(208,20,20,.85); /* Magelan red accent */
+}
+
+.menu-list .subcat:first-child{
+    margin-top: 0;
+    border-top: none;
 }
 
 .menu-list{
