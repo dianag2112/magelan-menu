@@ -1246,7 +1246,9 @@
     <footer class="footer">
         <div class="footer__box">
             <p class="footer__text">
-                For allergens & special requests, please ask our crew.
+                <span class="footer-msg">
+                За информация за алергени и други въпроси, моля обърнете се към нашия екип. /  For allergens & special requests, please ask our crew.
+                </span>
                 <span class="footer__muted">•</span>
                 <span class="footer__copy">© <span id="year"></span> Magelan</span>
             </p>
@@ -1260,7 +1262,7 @@
 
     const DEFAULT_LANG = 'bg';
 
-    const TRANS_SELECTORS = '.section__title, .item-name, .subcat, .item-desc';
+    const TRANS_SELECTORS = '.section__title, .item-name, .subcat, .item-desc, .footer-msg';
 
     function prepareTranslations() {
         document.querySelectorAll(TRANS_SELECTORS).forEach(el => {
