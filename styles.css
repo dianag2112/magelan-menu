@@ -81,25 +81,21 @@ body{
     font-size: 14px;
 }
 
-/* Remove old section separators if you still have them */
 .section{
-    margin-top: 0;           /* avoids big gaps */
+    margin-top: 0;
     padding-top: 0;
 }
 
-/* Accordion base */
 .accordion{
     margin: 0;
     padding: 0;
-    border: 0;               /* <-- this removes those extra lines */
+    border: 0;
 }
 
-/* Add spacing between sections WITHOUT extra borders */
 .section + .section{
     margin-top: 18px;
 }
 
-/* Clickable header row */
 .accordion__summary{
     list-style: none;
     cursor: pointer;
@@ -118,12 +114,10 @@ body{
     display: none;
 }
 
-/* Title inside summary */
 .accordion__summary .section__title{
     margin: 0;
 }
 
-/* Chevron rotate */
 .accordion__chev{
     color: var(--muted);
     font-size: 18px;
@@ -133,12 +127,9 @@ body{
     transform: rotate(180deg);
 }
 
-/* Collapsible content */
 .accordion__content{
     padding: 14px 0 6px;
 }
-
-/* ----- Menu rows ----- */
 
 .subcat{
     margin: 22px 0 12px;
@@ -204,7 +195,6 @@ body{
     line-height: 1.45;
 }
 
-/* Footer */
 .footer{
     margin-top: 50px;
     padding-top: 25px;
@@ -239,4 +229,30 @@ body{
 
 .footer__copy{
     white-space: nowrap;
+}
+
+.lang-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: flex;
+    gap: 0.5rem;
+    font-family: inherit;
+}
+
+.lang-switcher button {
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    cursor: pointer;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.lang-switcher button.is-active {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
 }

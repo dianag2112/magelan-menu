@@ -24,6 +24,11 @@
 <body>
 <a class="skip-link" href="#menu">Skip to menu</a>
 
+<div class="lang-switcher" aria-label="Language switcher">
+    <button type="button" data-lang-switch="bg">БГ</button>
+    <button type="button" data-lang-switch="en">EN</button>
+</div>
+
 <header class="hero">
     <div class="hero__inner">
         <div class="brand">
@@ -1229,6 +1234,60 @@
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const DEFAULT_LANG = 'bg';
+
+    const TRANS_SELECTORS = '.section__title, .item-name, .subcat';
+
+    function prepareTranslations() {
+        document.querySelectorAll(TRANS_SELECTORS).forEach(el => {
+            if (el.dataset.bg && el.dataset.en) return;
+
+            const html = el.innerHTML;
+            if (!html.includes(' / ')) return;
+
+            const parts = html.split(' / ');
+            if (parts.length < 2) return;
+
+            const bgPart = parts[0].trim();
+            const enPart = parts.slice(1).join(' / ').trim();
+
+            el.dataset.bg = bgPart;
+            el.dataset.en = enPart;
+        });
+    }
+
+    function setLanguage(lang) {
+        document.documentElement.setAttribute('lang', lang);
+        localStorage.setItem('lang', lang);
+
+        document.querySelectorAll(TRANS_SELECTORS).forEach(el => {
+            const bg = el.dataset.bg;
+            const en = el.dataset.en;
+            if (!bg || !en) return;
+            el.innerHTML = (lang === 'bg' ? bg : en);
+        });
+
+        document.querySelectorAll('[data-lang-switch]').forEach(btn => {
+            btn.classList.toggle('is-active', btn.dataset.langSwitch === lang);
+        });
+    }
+
+    function initLangSwitcher() {
+        prepareTranslations();
+
+        document.querySelectorAll('[data-lang-switch]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.langSwitch;
+                setLanguage(lang);
+            });
+        });
+
+        const savedLang = localStorage.getItem('lang') || DEFAULT_LANG;
+        setLanguage(savedLang);
+    }
+
+    document.addEventListener('DOMContentLoaded', initLangSwitcher);
 </script>
 
 </body>
