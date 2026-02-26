@@ -256,3 +256,25 @@ body{
     color: #000;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    .footer__box {
+        text-align: center;
+    }
+
+    .footer__text {
+        margin: 0;
+        display: block;
+    }
+
+    .footer-msg,
+    .footer__muted,
+    .footer__copy {
+        display: inline;
+    }
+
+    .footer__muted {
+        display: inline-block;
+        margin: 0 0.25rem;
+    }
+}
