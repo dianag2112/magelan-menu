@@ -258,23 +258,25 @@ body{
 }
 
 @media (max-width: 600px) {
+
     .footer__box {
         text-align: center;
     }
 
     .footer__text {
-        margin: 0;
         display: block;
+        margin: 0;
     }
 
     .footer-msg,
     .footer__muted,
     .footer__copy {
-        display: inline;
+        display: block;
+        margin: 0.25rem 0;
     }
 
     .footer__muted {
-        display: inline-block;
-        margin: 0 0.25rem;
+        font-size: 1.2rem;
+        line-height: 1;
     }
 }
