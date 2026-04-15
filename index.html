@@ -33,7 +33,7 @@
     <div class="hero__inner">
         <div class="brand">
             <img class="brand__logo" src="assets/magelan-index.jpg" alt="Magelan logo">
-            <p class="brand__sub">Restaurant Menu</p>
+            <p class="brand__sub">Заведението е на самообслужване / Self-service <i>(please order at the counter)</i></p>
         </div>
     </div>
 </header>
@@ -411,7 +411,7 @@
                     <p class="item-desc">300 г / 300 g</p>
 
                     <div class="menu-row">
-                        <span class="item-name">Панирани пилешки хапки / Breaded chicken bites</span>
+                        <span class="item-name">Панирани пилешки филенца / Breaded chicken fillets</span>
                         <span class="item-dots"></span>
                         <span class="item-price">4.40 €</span>
                     </div>
@@ -544,7 +544,7 @@
                     <p class="item-desc">100 г / 100 g</p>
 
                     <div class="menu-row">
-                        <span class="item-name"> Пилешко филе с бекон/ Chicken fillet with bacon</span>
+                        <span class="item-name"> Пилешко шишче с бекон / Chicken skewer with bacon</span>
                         <span class="item-dots"></span>
                         <span class="item-price">2.10 €</span>
                     </div>
@@ -1262,7 +1262,7 @@
 
     const DEFAULT_LANG = 'bg';
 
-    const TRANS_SELECTORS = '.section__title, .item-name, .subcat, .item-desc, .footer-msg';
+    const TRANS_SELECTORS = '.brand__sub, .section__title, .item-name, .subcat, .item-desc, .footer-msg';
 
     function prepareTranslations() {
         document.querySelectorAll(TRANS_SELECTORS).forEach(el => {
